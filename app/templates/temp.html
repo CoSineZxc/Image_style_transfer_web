@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="../static/bootstrap/css/bootstrap-grid.css">
+    <link type="text/css" rel="stylesheet" href="../static/bootstrap/css/bootstrap-reboot.css">
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.bundle.js"></script>
+    <style>
+        .img_window {
+            width: 500px;
+            height: 100%;
+            text-align: center;
+            float: left;
+        }
+
+        .img_window p {
+            width: 100%;
+            height: 30px;
+            margin: 0 auto;
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 20px;
+        }
+
+        .img_window img {
+            width: 100%;
+            height: 300px;
+            float: bottom;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="col-lg-4">
+        <h2 class="text-lg-center text-info" id="title1">原始图片</h2>
+        <button type="button" class="btn btn-primary mb-lg-2 mt-lg-2" id="button1">上传图片</button>
+        <input type="file" class="form-control-file mb-lg-2" id="file1">
+        <div class="img_window">
+            <p>黑白图像</p>
+            <br/>
+            <img  class="img-fluid" id="img1">
+        </div>
+    </div>
+    <div class="col-lg-4 text-primary">
+        <h2 class="align-middle text-lg-center text-info" id="title2">风格图片</h2>
+        <span class="dropdown magicalcoder-tmp-wrap">
+            <button class="btn dropdown-toggle btn-primary ml-lg-0 mb-lg-2 mt-lg-2" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" id="drop_button">可选风格</button>
+            <div class="dropdown-menu" x-placement="bottom-start"
+                 style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 51px, 0px);">
+                <a class="dropdown-item text-primary border-bottom" href="#">style1</a>
+                <a class="dropdown-item text-primary border-bottom" href="#">style2</a>
+                <a class="dropdown-item text-primary border-bottom" href="#">style3</a>
+                <a class="dropdown-item text-primary border-bottom" href="#">style4</a>
+                <a class="dropdown-item text-primary border-bottom" href="#">style5</a>
+                <a class="dropdown-item text-primary" href="#">style6</a>
+            </div>
+        </span>
+        <button type="button" class="btn btn-primary mb-lg-2 mt-lg-2" id="button2">自定义风格</button>
+        <input type="file" class="form-control-file mb-lg-2" id="file2">
+        <div class="img_window">
+            <p>黑白图像</p>
+            <br/>
+            <img class="img-fluid" id="img2" >
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <h2 class="align-middle text-lg-center text-info" id="title3">迁移图片</h2>
+        <button type="button" class="btn btn-primary mb-lg-3 mr-lg-5 mt-lg-2" id="button3">保存图片</button>
+        <div class="img_window">
+            <p>黑白图像</p>
+            <br/>
+            <img  class="img-fluid mt-lg-4">
+        </div>
+    </div>
+</div>
+</body>
+</html>

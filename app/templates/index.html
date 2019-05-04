@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>图片风格迁移</title>
+    <link type="text/css" rel="stylesheet" href="../static/stylesheets/style.css"/>
+</head>
+<body>
+
+<div class="logo">
+    <img src="../static/images/logo.bmp"/>
+</div>
+<div class="img_group">
+    <div class="img_window">
+        <p>原始图像</p>
+        <br/>
+        <input type="file" value="选择图片" class="file_btn" onchange="selectImg(this,1)" id="file_upload1"
+               name="file_upload"/>
+        <div class="btn_two">
+            <input type="button" value="上传图片" id="btn_upload1" onclick="uploadImg(1)"/>
+        </div>
+        <br/>
+        <img id="bw_img"/>
+    </div>
+    <div class="img_window">
+        <p>风格图像</p>
+        <br/>
+        <input type="file" value="选择图片" class="file_btn" onchange="selectImg(this,2)" id="file_upload2"
+               name="file_upload"/>
+        <div class="btn_two">
+            <input type="button" value="上传自定义风格" id="btn_upload2" onclick="uploadImg(2)"/>
+            <select name="自定义风格" id="select_style" onchange="selectStyle()">
+                <option value="0">自定义风格</option>
+                <option value="1">梵高星空主题</option>
+                <option value="2">莫奈睡莲主题</option>
+                <option value="3">毕加索镜前少女</option>
+                <option value="4">神奈川冲浪里</option>
+                <option value="5">千里江山图</option>
+                <option value="6">格尔尼卡</option>
+            </select>
+        </div>
+        <img id="style_img"/>
+    </div>
+    <div class="img_window">
+        <p>迁移图像</p>
+        <br/>
+        <input type="file" value="选择图片" class="file_btn" onchange="selectImg(this,2)" id="file_upload3"
+               name="file_upload" style="visibility: hidden;"/>
+        <div class="btn_two">
+            <input type="button" value="图像迁移" id="btn_fuse" onclick="trans_pic()"/>
+        </div>
+        <img id="fuse_img"/>
+    </div>
+    s
+</div>
+<script src="../static/javascripts/jquery-3.4.0.min.js"></script>
+<script src="../static/javascripts/index.js"></script>
+</body>
+</html>

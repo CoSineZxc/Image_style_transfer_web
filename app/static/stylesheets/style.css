@@ -1,0 +1,99 @@
+body {
+    background: url(../images/backgroundimg.jpg) 0 0 no-repeat;
+}
+
+div {
+    width: 100%;
+    font-size: 0;
+    margin: 0 auto;
+    text-align: center
+}
+
+.logo {
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    height: 150px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.btn_group {
+    width: 300px;
+    height: 80px
+}
+
+.file_btn {
+    background-color: #CCFFFF;
+    color: #000000;
+    width: 150px;
+    height: 30px;
+
+}
+
+.btn_two input {
+    width: 150px;
+    padding: 8px;
+    background-color: deepskyblue;
+    color: #000;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+}
+
+.btn_two select {
+    width: 150px;
+    padding: 8px;
+    background-color: #C7EDCC;/*#C7EDCC*/
+    color: #000;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    text-align-last:center;
+}
+
+.img_group {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+
+.img_window {
+    width: 400px;
+    height: 100%;
+    /*text-align: center;*/
+    float: left;
+}
+
+.img_window p {
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    /*text-align: center;*/
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.img_window img {
+    width: 100%;
+    height: 300px;
+    float: bottom;
+}
+
+.btn_download {
+    width: 100px;
+    padding: 8px;
+    background-color: #C7EDCC;
+    color: #000;
+    float: right;
+}
