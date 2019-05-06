@@ -45,10 +45,10 @@ def trans_picture(request):
     dict = {}
     print(dir_input)
     print(dir_style)
-    img_trans.Img_Style_Transfer(dir_input, dir_style)  # 接口示例，dir_input为原始图片路径, dir_style为风格图片路径
+    img_trans.Img_Style_Transfer(dir_style,dir_input)  # 接口示例，dir_input为原始图片路径, dir_style为风格图片路径
     filename1 = filename1.split('.')[0]
     filename2 = filename2.split('.')[0]
 
-    dict['filename'] = filename1+'_'+filename2+".jpg"
+    dict['filename'] = filename2+'_'+filename1+".jpg"
     data = json.dumps(dict)
     return HttpResponse(data)
