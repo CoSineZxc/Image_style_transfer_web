@@ -91,13 +91,13 @@ def run_style_transfer(cnn, content_img, style_img, input_img, use_cuda, num_ste
     '''
     Run the style transfer.
     '''
-    print('Building the style transfer model..')
+    print('模型建立...')
     model, style_losses, content_losses = get_style_model_and_losses(cnn, style_img, content_img, use_cuda,
                                                                      content_layers_default, style_layers_default,
                                                                      style_weight, content_weight)
     input_param, optimizer = get_input_param_optimizer(input_img)
 
-    print('Optimizing..')
+    print('模型优化...')
     run = [0]
     while run[0] <= num_steps:
 

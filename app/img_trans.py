@@ -29,8 +29,8 @@ def Img_Style_Transfer(Style_imgdir, Cont_imgdir):
         "we need to import style and content images of the same size"
 
     ############################### 显示图像 ###############################
-    img_show(style_img, imsize, title='Style Image')
-    img_show(content_img.data, imsize, title='Content Image')
+    # img_show(style_img, imsize, title='Style Image')
+    # img_show(content_img.data, imsize, title='Content Image')
 
     ############################### 神经网络搭建 ###############################
     cnn = models.vgg19(pretrained=True).features
